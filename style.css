@@ -1,11 +1,12 @@
 :root {
     --color-accent: oklch(62% 0.16 242);
-    --color-accent-soft: oklch(96% 0.03 242);
-    --color-text: #1f2937;
-    --color-heading: #102a43;
-    --color-line: #cfd8df;
-    --color-surface: #ffffff;
+    --color-accent-soft: color-mix(in oklch, var(--color-accent), canvas 88%);
+    --color-text: canvastext;
+    --color-heading: color-mix(in oklch, canvastext 92%, var(--color-accent) 8%);
+    --color-line: color-mix(in oklch, canvastext 28%, canvas 72%);
+    --color-surface: color-mix(in oklch, canvas 94%, var(--color-accent) 6%);
     --shadow-soft: 0 10px 30px rgba(16, 42, 67, 0.08);
+    color-scheme: light dark;
 }
 
 html {
@@ -18,8 +19,8 @@ body {
     margin: 0 auto;
     padding: 1rem 1.25rem 3rem;
     background:
-        radial-gradient(circle at top right, rgba(81, 129, 184, 0.12), transparent 24rem),
-        #f7f9fc;
+        radial-gradient(circle at top right, color-mix(in oklch, var(--color-accent) 18%, transparent), transparent 24rem),
+        canvas;
     color: var(--color-text);
 }
 
@@ -32,6 +33,7 @@ nav {
     gap: 0.25rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--color-line);
+    --border-color: color-mix(in oklch, var(--color-accent) 18%, canvastext 22%);
 }
 
 nav a {
@@ -52,7 +54,7 @@ nav a:focus-visible {
 }
 
 nav a.current {
-    border-bottom-color: #b7c2c8;
+    border-bottom-color: var(--border-color);
     padding-bottom: 0.6rem;
 }
 
@@ -102,7 +104,7 @@ ul {
 section,
 article {
     background: var(--color-surface);
-    border: 1px solid #dde5ec;
+    border: 1px solid color-mix(in oklch, var(--color-line) 72%, canvas 28%);
     border-radius: 1rem;
     box-shadow: var(--shadow-soft);
 }
@@ -118,7 +120,7 @@ article {
 }
 
 .intro-card {
-    background: linear-gradient(180deg, #ffffff, #f6f9ff);
+    background: linear-gradient(180deg, color-mix(in oklch, canvas 92%, white 8%), color-mix(in oklch, var(--color-accent-soft) 72%, canvas 28%));
 }
 
 .projects-grid {
@@ -152,7 +154,7 @@ article {
     max-width: 48rem;
     align-items: start;
     background: var(--color-surface);
-    border: 1px solid #dde5ec;
+    border: 1px solid color-mix(in oklch, var(--color-line) 72%, canvas 28%);
     border-radius: 1rem;
     box-shadow: var(--shadow-soft);
     padding: 1.2rem;
@@ -169,14 +171,16 @@ article {
 
 input,
 textarea,
-button {
+button,
+select {
     font: inherit;
     box-sizing: border-box;
     width: 100%;
     padding: 0.75rem 0.85rem;
-    border: 1px solid #b8c4d6;
+    border: 1px solid color-mix(in oklch, var(--color-line) 85%, canvastext 15%);
     border-radius: 0.7rem;
-    background: #ffffff;
+    background: color-mix(in oklch, canvas 92%, var(--color-accent-soft) 8%);
+    color: inherit;
 }
 
 textarea {
@@ -219,8 +223,25 @@ button:focus-visible {
 }
 
 .resume-page article > p:first-of-type {
-    color: #52606d;
+    color: color-mix(in oklch, var(--color-text) 72%, canvas 28%);
     font-weight: 600;
+}
+
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.color-scheme select {
+    width: auto;
+    min-width: 7.5rem;
+    padding: 0.35rem 0.55rem;
 }
 
 @media (max-width: 700px) {
@@ -260,5 +281,11 @@ button:focus-visible {
 
     button {
         grid-column: auto;
+    }
+
+    .color-scheme {
+        position: static;
+        justify-content: flex-end;
+        margin-bottom: 0.8rem;
     }
 }
