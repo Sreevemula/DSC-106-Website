@@ -9,28 +9,56 @@
 <body>
     <nav aria-label="Main navigation">
         <a href="../">Home</a>
-        <a href="./">Projects</a>
+        <a class="current" href="./">Projects</a>
         <a href="../contact/">Contact</a>
         <a href="../resume/">Resume</a>
         <a href="https://github.com/Sreevemula" target="_blank" rel="noreferrer">GitHub Profile</a>
     </nav>
 
-    <main>
+    <main class="projects-page">
         <h1>Projects</h1>
-        <p>Here is one of the projects highlighted in my resume.</p>
+        <p>Selected work spanning software engineering, AI, and product building.</p>
 
-        <section>
-            <h2>SlugLabs</h2>
-            <p><strong>Software Developer</strong> | Santa Cruz, CA | Jan. 2025 - May 2025</p>
-            <p>
-                Developed SlugLabs, a UCSC lab matchmaker that scrapes and
-                normalizes research-opportunity data into PostgreSQL and serves
-                it via RESTful APIs for lightning-fast keyword filtering.
-            </p>
-            <ul>
-                <li>Integrated OpenAI GPT-4 to extract skills from student resumes and transcripts, delivering personalized lab matches to 300+ student users within the first month.</li>
-                <li>Containerized Linux microservices with Docker, deployed centralized logging via Prometheus/Grafana, and integrated Firebase Authentication.</li>
-            </ul>
+        <section class="projects-grid">
+            <article class="project-card">
+                <h2>SlugLabs</h2>
+                <p class="project-meta">Software Developer | Santa Cruz, CA | Jan. 2025 - May 2025</p>
+                <p>
+                    Developed SlugLabs, a UCSC lab matchmaker that scrapes and
+                    normalizes research-opportunity data into PostgreSQL and
+                    serves it via RESTful APIs for lightning-fast keyword filtering.
+                </p>
+                <ul>
+                    <li>Integrated OpenAI GPT-4 to extract skills from student resumes and transcripts, delivering personalized lab matches to 300+ student users within the first month.</li>
+                    <li>Containerized Linux microservices with Docker, deployed centralized logging via Prometheus/Grafana, and integrated Firebase Authentication.</li>
+                </ul>
+            </article>
+
+            <article class="project-card">
+                <h2>Portfolio Website</h2>
+                <p class="project-meta">Personal Project | 2026</p>
+                <p>
+                    Built a multi-page personal website with HTML and CSS to
+                    showcase projects, contact information, and my resume.
+                </p>
+                <ul>
+                    <li>Created a responsive navigation bar and page layout using Flexbox and CSS Grid.</li>
+                    <li>Improved readability with tighter content width, clearer hierarchy, and reusable styling across pages.</li>
+                </ul>
+            </article>
+
+            <article class="project-card">
+                <h2>AI and Data Work</h2>
+                <p class="project-meta">Coursework and Applied Projects</p>
+                <p>
+                    Ongoing work in machine learning, analytics, and software
+                    systems that combines technical implementation with product thinking.
+                </p>
+                <ul>
+                    <li>Experience using Python, Pandas, and statistical modeling in academic and internship settings.</li>
+                    <li>Interest in turning data and AI ideas into useful tools that real people can use.</li>
+                </ul>
+            </article>
         </section>
     </main>
 </body>

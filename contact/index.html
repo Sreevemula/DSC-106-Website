@@ -10,33 +10,33 @@
     <nav aria-label="Main navigation">
         <a href="../">Home</a>
         <a href="../projects/">Projects</a>
-        <a href="./">Contact</a>
+        <a class="current" href="./">Contact</a>
         <a href="../resume/">Resume</a>
         <a href="https://github.com/Sreevemula" target="_blank" rel="noreferrer">GitHub Profile</a>
     </nav>
 
-    <main>
+    <main class="contact-page">
         <h1>Contact</h1>
         <p>
             Send me a message using the form below. Your email app will open
             with the subject and message filled in.
         </p>
 
-        <form action="mailto:svemula@ucsd.edu" method="POST" enctype="text/plain">
-            <label>
-                Email
-                <input type="email" name="email" value="your-email@example.com">
-            </label>
+        <form class="contact-form" action="mailto:svemula@ucsd.edu" method="POST" enctype="text/plain">
+            <div class="form-row">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" type="email" name="email" value="your-email@example.com">
+            </div>
 
-            <label>
-                Subject
-                <input name="subject" value="Hello from my website">
-            </label>
+            <div class="form-row">
+                <label for="contact-subject">Subject</label>
+                <input id="contact-subject" name="subject" value="Hello from my website">
+            </div>
 
-            <label>
-                Body
-                <textarea name="body">Hi Sreekar, I wanted to reach out after seeing your website.</textarea>
-            </label>
+            <div class="form-row">
+                <label for="contact-body">Message</label>
+                <textarea id="contact-body" name="body">Hi Sreekar, I wanted to reach out after seeing your website.</textarea>
+            </div>
 
             <button>Send message</button>
         </form>
