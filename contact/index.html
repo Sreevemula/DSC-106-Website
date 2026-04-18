@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sreekar Vemula</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <a href="../">Home</a>
+        <a href="../projects/">Projects</a>
+        <a href="./">Contact</a>
+        <a href="../resume/">Resume</a>
+        <a href="https://github.com/Sreevemula" target="_blank" rel="noreferrer">GitHub Profile</a>
+    </nav>
+
+    <main>
+        <h1>Contact</h1>
+        <p>
+            Send me a message using the form below. Your email app will open
+            with the subject and message filled in.
+        </p>
+
+        <form action="mailto:svemula@ucsd.edu" method="POST" enctype="text/plain">
+            <label>
+                Email
+                <input type="email" name="email" value="your-email@example.com">
+            </label>
+
+            <label>
+                Subject
+                <input name="subject" value="Hello from my website">
+            </label>
+
+            <label>
+                Body
+                <textarea name="body">Hi Sreekar, I wanted to reach out after seeing your website.</textarea>
+            </label>
+
+            <button>Send message</button>
+        </form>
+    </main>
+</body>
+</html>
