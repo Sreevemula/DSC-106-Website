@@ -1,0 +1,74 @@
+[
+  {
+    "title": "SlugLabs",
+    "year": 2025,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Built a UCSC lab matchmaker that scrapes research opportunities, normalizes them into PostgreSQL, and serves fast keyword-based search for students exploring labs."
+  },
+  {
+    "title": "Portfolio Website",
+    "year": 2026,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Designed and developed a personal multi-page site to showcase projects, contact details, and resume content with reusable HTML, CSS, and JavaScript components."
+  },
+  {
+    "title": "AI and Data Work",
+    "year": 2025,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Created course and side projects in machine learning, analytics, and product-focused software that connect data insights with practical user experiences."
+  },
+  {
+    "title": "Triton Pantry Finder",
+    "year": 2024,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Prototyped a campus resource finder that helps students locate nearby food and support resources using searchable location data and simple web maps."
+  },
+  {
+    "title": "CPU Simulator",
+    "year": 2024,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Implemented a low-level simulator for a simplified instruction set architecture to strengthen systems thinking around memory, control flow, and debugging."
+  },
+  {
+    "title": "Campus Event Recommender",
+    "year": 2025,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Explored recommendation logic for student events by organizing event metadata and matching interests to improve discovery and campus engagement."
+  },
+  {
+    "title": "Study Group Matcher",
+    "year": 2024,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Built a lightweight matching workflow that groups students by schedule and course interests to make forming study groups less manual."
+  },
+  {
+    "title": "Sales Dashboard",
+    "year": 2023,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Analyzed sales data in dashboards that surface trends, category performance, and summary metrics for quick decision-making."
+  },
+  {
+    "title": "Health Habit Tracker",
+    "year": 2023,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Created a tracker for everyday health habits with simple summaries, progress monitoring, and a clean interface focused on consistency."
+  },
+  {
+    "title": "Gesture Recognition Demo",
+    "year": 2025,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Experimented with computer vision pipelines to recognize simple gestures and translate them into interactive software actions."
+  },
+  {
+    "title": "Resume Ranker",
+    "year": 2024,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Tested ranking ideas for resumes and job descriptions by extracting keywords and scoring alignment to support quicker screening."
+  },
+  {
+    "title": "Personal Finance Visualizer",
+    "year": 2026,
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Built interactive finance views that make spending categories, balances, and trends easier to understand over time."
+  }
+]
